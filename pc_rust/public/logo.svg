@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">say vibe Logo</title>
+  <desc id="desc">Rounded speech card with sv monogram for Say Vibe.</desc>
+  <defs>
+    <linearGradient id="bg" x1="24" y1="18" x2="232" y2="238" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1220" />
+      <stop offset="1" stop-color="#1F2A44" />
+    </linearGradient>
+    <linearGradient id="bubble" x1="48" y1="84" x2="212" y2="198" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F3D73" />
+      <stop offset="1" stop-color="#1B5E91" />
+    </linearGradient>
+    <linearGradient id="mark" x1="92" y1="100" x2="166" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FCD34D" />
+      <stop offset="1" stop-color="#FB7185" />
+    </linearGradient>
+  </defs>
+  <rect x="20" y="20" width="216" height="216" rx="52" fill="url(#bg)" />
+  <path d="M72 84H184A28 28 0 0 1 212 112V150A28 28 0 0 1 184 178H138L108 206V178H72A28 28 0 0 1 44 150V112A28 28 0 0 1 72 84Z" fill="url(#bubble)" />
+  <path d="M78 115a13 13 0 0 1 13-13h74a13 13 0 0 1 0 26H109a13 13 0 1 0 0 26h60a13 13 0 0 1 0 26H91a13 13 0 0 1 0-26h56a13 13 0 1 0 0-26H91a13 13 0 0 1-13-13z" fill="#E8F1FF" opacity="0.14" />
+  <text x="128" y="154" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="700" fill="url(#mark)">sv</text>
+</svg>

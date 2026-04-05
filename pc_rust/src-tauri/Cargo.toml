@@ -1,0 +1,31 @@
+[package]
+name = "say-vibe-pc-rust"
+version = "0.1.0"
+authors = ["aqiangai"]
+description = "say vibe desktop relay powered by Tauri, Vue and Rust"
+edition = "2021"
+license = "MIT"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+arboard = "3.6.1"
+axum = { version = "0.8", features = ["http1", "json", "tokio", "ws"] }
+futures-util = "0.3"
+if-addrs = "0.13"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+tokio = { version = "1", features = ["io-util", "macros", "net", "process", "rt-multi-thread", "signal", "sync", "time"] }
+tokio-stream = { version = "0.1", features = ["sync"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+core-graphics = "0.25"
+macos-accessibility-client = "0.0.2"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
